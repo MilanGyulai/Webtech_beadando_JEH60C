@@ -130,7 +130,7 @@
     font-family: sans-serif; /* Sans-serif betűtípus */
     margin: 20px; /* Külső margók */
     background-color: #f8f8f8; /* Világosszürke háttérszín */
-    background-image: url("../Kepek/pexels-thatguycraig000-1563356.jpg"); /* Háttérkép beállítása */
+    background-image: url("pexels-thatguycraig000-1563356.jpg"); /* Háttérkép beállítása */
     background-repeat: no-repeat; /* A háttérkép ne ismétlődjön */
     background-size:auto; /* A háttérkép kitöltse a teljes hátteret */
     background-position: center; /* A háttérkép középre igazítva */
