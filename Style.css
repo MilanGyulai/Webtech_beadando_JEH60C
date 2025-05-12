@@ -1,0 +1,182 @@
+/* Stílus a törlés gombhoz az autó listájában */
+#car-list li button.delete-car-button {
+    background-color: #dc3545; /* Piros háttérszín a törlés jelzésére */
+    color: white; /* Fehér szövegszín */
+    border: none; /* Nincs keret */
+    padding: 8px 12px; /* Belső margók (felül/alul, balra/jobbra) */
+    border-radius: 4px; /* Lekerekített sarkok */
+    cursor: pointer; /* Mutató a kurzor fölé húzáskor */
+    font-size: 0.9rem; /* Kisebb betűméret */
+    margin-left: 10px; /* Bal oldali margó a többi elemhez képest */
+    transition: background-color 0.3s ease; /* Áttűnés a háttérszín változásához */
+  }
+  
+  /* Stílus a törlés gombhoz az autó listájában, amikor a kurzor fölé kerül */
+  #car-list li button.delete-car-button:hover {
+    background-color: #c82333; /* Sötétebb piros háttérszín hover állapotban */
+  }
+  
+  /* Stílus a navigációs sáv konténeréhez */
+  .navbar .container {
+    display: flex; /* Flexbox elrendezés a belső elemekhez */
+    justify-content: space-between; /* Az elemek közötti tér egyenlően elosztva, széleken rátapadnak */
+    align-items: center; /* Az elemek függőlegesen középre igazítva */
+    max-width: 1200px; /* Maximális szélesség */
+    margin: 0 auto; /* Vízszintesen középre igazítva */
+    padding: 0 20px; /* Belső margók (felül/alul 0, balra/jobbra 20px) */
+    border-radius: 15%; /* Erősen lekerekített sarkok (ovális hatás) */
+  }
+  
+  /* Stílus az autó listájához (<ul> elem) */
+  #car-list {
+    list-style: none; /* Eltávolítja a lista jeleket (pontok, számok) */
+    padding: 0; /* Nincs belső margó */
+    display: inline-flex; /* Inline-flex elrendezés, az elemek egymás mellé kerülnek, de a konténer elfoglalja a rendelkezésre álló szélességet */
+    flex-wrap: wrap; /* Ha az elemek nem férnek el egy sorban, új sorba törnek */
+    gap: 25px; /* Térköz az egyes autó elemek között */
+  }
+  
+  /* Stílus a képek lekerekített sarkához (valószínűleg nem használt a jelenlegi HTML-ben) */
+  #img-round-border {
+    border-radius: 10%; /* Lekerekített sarkok a képekhez */
+  }
+  
+  /* Stílus az egyes autó elemekhez a listában (<li> elem) */
+  #car-list li {
+    border: 1px solid #ddd; /* Vékony, szürke keret */
+    border-radius: 8px; /* Lekerekített sarkok */
+    padding: 15px; /* Belső margó */
+    text-align: center; /* Szöveg középre igazítása */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Halvány árnyék a doboz körül */
+  }
+  
+  /* Stílus az autó nevéhez (<h3> elem) az autó elemekben */
+  #car-list li h3 {
+    margin-top: 0; /* Nincs felső margó */
+    margin-bottom: 5px; /* Kis alsó margó */
+    color: #333; /* Sötétszürke szövegszín */
+  }
+  
+  /* Stílus az általános gombokhoz az autó elemekben (pl. Részletek) */
+  #car-list li button {
+    background-color: #007bff; /* Kék háttérszín */
+    color: white; /* Fehér szövegszín */
+    border: none; /* Nincs keret */
+    padding: 8px 15px; /* Belső margók */
+    border-radius: 4px; /* Lekerekített sarkok */
+    cursor: pointer; /* Mutató a kurzor fölé húzáskor */
+    font-size: 14px; /* Betűméret */
+    transition: background-color 0.3s ease; /* Áttűnés a háttérszín változásához */
+  }
+  
+  /* Stílus az általános gombokhoz az autó elemekben, amikor a kurzor fölé kerül */
+  #car-list li button:hover {
+    background-color: #0056b3; /* Sötétebb kék háttérszín hover állapotban */
+  }
+  
+  /* Stílus az autó részleteinek szekciójához */
+  #car-details-section {
+    padding: 20px; /* Belső margó */
+    border: 1px solid #ddd; /* Vékony, szürke keret */
+    border-radius: 8px; /* Lekerekített sarkok */
+    margin-top: 20px; /* Felső margó a többi elemhez képest */
+    background-color: #f9f9f9; /* Világosszürke háttérszín */
+  }
+  
+  /* Stílus az autó részleteinek címéhez (<h3> elem) */
+  #car-details h3 {
+    color: #333; /* Sötétszürke szövegszín */
+    margin-top: 0; /* Nincs felső margó */
+    margin-bottom: 10px; /* Kis alsó margó */
+  }
+  
+  /* Stílus a bekezdésekhez az autó részleteiben */
+  #car-details p {
+    line-height: 1.6; /* Sorköz */
+    margin-bottom: 10px; /* Alsó margó */
+  }
+  
+  /* Stílus a részletek címkéihez (pl. Tulajdonos:, Évjárat:) */
+  #car-details .details-label {
+    font-weight: bold; /* Félkövér betűk */
+    margin-right: 5px; /* Kis jobb oldali margó */
+  }
+  
+  /* Stílus a "Vissza a listához" gombhoz az autó részleteiben */
+  #car-details #back-to-list {
+    background-color: #6c757d; /* Szürke háttérszín */
+    color: white; /* Fehér szövegszín */
+    border: none; /* Nincs keret */
+    padding: 10px 15px; /* Belső margók */
+    border-radius: 4px; /* Lekerekített sarkok */
+    cursor: pointer; /* Mutató a kurzor fölé húzáskor */
+    font-size: 16px; /* Betűméret */
+    transition: background-color 0.3s ease; /* Áttűnés a háttérszín változásához */
+    margin-top: 15px; /* Felső margó */
+  }
+  
+  /* Stílus a "Vissza a listához" gombhoz az autó részleteiben, amikor a kurzor fölé kerül */
+  #car-details #back-to-list:hover {
+    background-color: #5a6268; /* Sötétebb szürke háttérszín hover állapotban */
+  }
+  
+  /* Stílus az elemek elrejtéséhez */
+  .hidden {
+    display: none !important; /* Fontos, hogy felülírjon más display tulajdonságokat */
+  }
+  
+  /* Alapértelmezett stílusok a body elemhez */
+  body {
+    font-family: sans-serif; /* Sans-serif betűtípus */
+    margin: 20px; /* Külső margók */
+    background-color: #f8f8f8; /* Világosszürke háttérszín */
+    background-image: url("../Kepek/pexels-thatguycraig000-1563356.jpg"); /* Háttérkép beállítása */
+    background-repeat: no-repeat; /* A háttérkép ne ismétlődjön */
+    background-size:auto; /* A háttérkép kitöltse a teljes hátteret */
+    background-position: center; /* A háttérkép középre igazítva */
+  }
+  
+  /* Stílus a fő konténerhez */
+  .container {
+    max-width: 960px; /* Maximális szélesség */
+    margin: 0 auto; /* Vízszintesen középre igazítva */
+    background-color: #ffffff; /* Fehér háttérszín */
+    padding: 30px; /* Belső margók */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Halvány árnyék a doboz körül */
+  }
+  
+  /* Stílus a másodlagos címekhez (<h2> elem) */
+  h2 {
+    border-bottom: 2px solid #eee; /* Vékony, világosszürke vonal alul */
+    padding-bottom: 10px; /* Alsó belső margó a vonal alatt */
+    margin-bottom: 20px; /* Alsó külső margó */
+  }
+  
+  /* Stílus a felső navigációs sávhoz */
+  .topnav {
+    background-color: #333; /* Sötétszürke háttérszín */
+    overflow: hidden; /* Megakadályozza, hogy a lebegő elemek kilógjanak */
+  }
+  
+  /* Stílus a navigációs sáv linkjeihez (<a> elem) */
+  .topnav a {
+    float: left; /* Balra lebegtetés, hogy egymás mellé kerüljenek */
+    color: #f2f2f2; /* Világosszürke szövegszín */
+    text-align: center; /* Szöveg középre igazítása */
+    padding: 14px 16px; /* Belső margók */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    font-size: 17px; /* Betűméret */
+  }
+  
+  /* Stílus a navigációs sáv linkjeihez, amikor a kurzor fölé kerül */
+  .topnav a:hover {
+    background-color: #ddd; /* Világosszürke háttérszín hover állapotban */
+    color: black; /* Fekete szövegszín hover állapotban */
+  }
+  
+  /* Stílus az aktív navigációs sáv linkhez */
+  .topnav a.active {
+    background-color: #04AA6D; /* Zöld háttérszín az aktív linkhez */
+    color: white; /* Fehér szövegszín az aktív linkhez */
+  }
